@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/newLoginFragment">
+
+    <fragment
+        android:id="@+id/newLoginFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.NewLoginFragment"
+        android:label="fragment_newLogin"
+        tools:layout="@layout/fragment_new_login">
+        <action
+            android:id="@+id/action_loginFragment_to_treasureList"
+            app:destination="@id/treasureListFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_treasureListFragment"
+            app:destination="@id/treasureListFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_loginFragment"
+            app:destination="@id/newLoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createTreasureFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.CreateTreasureFragment"
+        android:label="fragment_create_treasure"
+        tools:layout="@layout/fragment_create_treasure" >
+        <action
+            android:id="@+id/action_createTreasureFragment_to_treasureListFragment"
+            app:destination="@id/treasureListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/treasureListFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.TreasureListFragment"
+        android:label="fragment_treasure_list"
+        tools:layout="@layout/fragment_treasure_list">
+        <action
+            android:id="@+id/action_treasureListFragment_to_treasureDetailsFragment"
+            app:destination="@id/treasureDetailsFragment" />
+        <action
+            android:id="@+id/action_treasureListFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_treasureListFragment_to_createTreasureFragment"
+            app:destination="@id/createTreasureFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/treasureDetailsFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.TreasureDetailsFragment"
+        android:label="fragment_treasure_details"
+        tools:layout="@layout/fragment_treasure_details">
+        <action
+            android:id="@+id/action_treasureDetailsFragment_to_claimTreasureFragment"
+            app:destination="@id/claimTreasureFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/claimTreasureFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.ClaimTreasureFragment"
+        android:label="fragment_claim_treasure"
+        tools:layout="@layout/fragment_claim_treasure">
+        <action
+            android:id="@+id/action_claimTreasureFragment_to_treasureListFragment"
+            app:destination="@id/treasureListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/placeholderFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.PlaceholderFragment"
+        android:label="fragment_placeholder"
+        tools:layout="@layout/fragment_placeholder">
+        <action
+            android:id="@+id/action_placeholderFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hallOfFameFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.HallOfFameFragment"
+        android:label="fragment_hall_of_fame"
+        tools:layout="@layout/fragment_hall_of_fame" >
+        <action
+            android:id="@+id/action_hallOfFameFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationDialogFragment"
+        android:name="com.threess.summership.treasurehunt.view.fragment.RegistrationDialogFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/newLoginFragment" />
+    </fragment>
+</navigation>

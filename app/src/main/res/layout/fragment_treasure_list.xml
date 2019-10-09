@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/listBackgroundBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_treasure_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/tb_fav_filter"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/treasure_filter_margin_01"
+        app:layout_constraintBottom_toTopOf="@+id/tb_fav_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tb_fav_filter"
+        android:layout_width="@dimen/treasure_filter_btn_dim"
+        android:layout_height="@dimen/treasure_filter_btn_dim"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/treasure_filter_margin_02"
+        android:background="@drawable/ic_toggle_fav_filter"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_favorite_filter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/treasure_filter_margin_03"
+        android:layout_marginEnd="@dimen/treasure_filter_margin_03"
+        android:layout_marginBottom="@dimen/treasure_filter_text_margin"
+        android:text="Filter by Favourite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tb_fav_filter" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

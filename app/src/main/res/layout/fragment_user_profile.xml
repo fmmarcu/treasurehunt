@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/loginBackgroundBlue">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfileImageView"
+        android:layout_width="@dimen/userProfileCircleImageView"
+        android:layout_height="@dimen/userProfileCircleImageView"
+        android:layout_marginTop="@dimen/userProfileImageViewMarginTop"
+        android:src="@drawable/default_blue_profile"
+        app:civ_border_color="@color/loginButtonYellow"
+        app:civ_border_width="@dimen/imageBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userProfileScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/userProfileScoreLabelMarginTop"
+        android:text="@string/userProfileScoreLabel"
+        android:textColor="@color/colorYellow"
+        android:textSize="@dimen/userProfileTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileImageView" />
+
+    <Button
+        android:id="@+id/userProfileUpdateButton"
+        android:layout_width="@dimen/userProfileUpdateButtonWidth"
+        android:layout_height="@dimen/userProfileUpdateButtonHeight"
+        android:layout_marginTop="@dimen/userProfileUpdateButtonMarginTop"
+        android:background="@drawable/rounded_button_with_shadow"
+        android:elevation="@dimen/loginElevation"
+        android:gravity="center"
+        android:text="@string/userProfileUpdateButton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileScoreLabel" />
+
+    <TextView
+        android:id="@+id/userProfileUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/userProfileUsernameLabelMarginTop"
+        android:text="@string/userProfileUsernameLabel"
+        android:textColor="@color/colorYellow"
+        android:textSize="@dimen/userProfileTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileUpdateButton" />
+
+    <TextView
+        android:id="@+id/userProfileTreasuresDiscoveredLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/userProfileTreasuresDiscoveredLabelMarginTop"
+        android:text="@string/userProfileTreasuresDiscoveredLabel"
+        android:textColor="@color/colorYellow"
+        android:textSize="@dimen/userProfileTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileTreasuresHiddenLabel" />
+
+    <TextView
+        android:id="@+id/userProfileTreasuresHiddenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/userProfileTreasuresHiddenLabelMarginTop"
+        android:text="@string/userProfileTreasuresHiddenLabel"
+        android:textColor="@color/colorYellow"
+        android:textSize="@dimen/userProfileTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileUsernameLabel" />
+
+    <Button
+        android:id="@+id/userProfileLogOutButton"
+        android:layout_width="@dimen/userProfileLogOutButtonWidth"
+        android:layout_height="@dimen/userProfileLogOutButtonHeight"
+        android:layout_marginTop="@dimen/userProfileLogOutButtonMarginTop"
+        android:background="@drawable/rounded_button_with_shadow"
+        android:elevation="@dimen/loginElevation"
+        android:text="@string/userProfileLogoutButton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileTreasuresDiscoveredLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

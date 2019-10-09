@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_new_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBackgroundBlue"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/secondaryLayoutWidth"
+        android:layout_height="@dimen/secondaryLayoutHeight"
+        android:background="@drawable/rounded_corner_blue"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="@dimen/editTextCredentialsWidth"
+            android:layout_height="@dimen/editTextCredentialsHeight"
+            android:layout_marginBottom="@dimen/usernameEditTextMarginBottom"
+            android:background="@drawable/rounded_corner_yellow"
+            android:gravity="center"
+            android:hint="@string/username"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="@dimen/editTextCredentialsWidth"
+            android:layout_height="@dimen/editTextCredentialsHeight"
+            android:layout_marginTop="@dimen/passwordEditTextMarginTop"
+            android:background="@drawable/rounded_corner_yellow"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
+
+        <TextView
+            android:id="@+id/registerAccount"
+            android:layout_width="@dimen/createAccountTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/createAccountTextMarginTop"
+            android:gravity="center"
+            android:text="@string/create_account"
+            android:textColor="@color/create_account_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="@dimen/newLoginButtonWidth"
+            android:layout_height="@dimen/newLoginButtonHeight"
+            android:layout_marginTop="@dimen/marginTopLoginButton"
+            android:background="@drawable/rounded_button_with_shadow"
+            android:elevation="@dimen/loginElevation"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerAccount" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="@dimen/circleDimensions"
+            android:layout_height="@dimen/circleDimensions"
+            android:layout_marginBottom="@dimen/createAccountTextMarginTop"
+            android:src="@drawable/default_blue_profile"
+            app:civ_border_color="@color/loginButtonYellow"
+            app:civ_border_width="@dimen/imageBorder"
+            app:layout_constraintBottom_toTopOf="@+id/loginErrorMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/loginErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/createAccountTextMarginTop"
+            android:textColor="@color/errorMessageColor"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/usernameEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

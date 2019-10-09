@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">TreasureHunt</string>
+
+    <!-- BOTTOM NAVIGATION STRING VALUES -->
+    <string name="bot_nav_home">HOME</string>
+    <string name="bot_nav_profile">PROFILE</string>
+    <string name="bot_nav_hall_of_fame">HALL OF FAME</string>
+
+    <!-- USER PROFILE FEATURE STRING VALUES -->
+    <string name="userProfileScoreLabel">Score: %1$s</string>
+    <string name="userProfileUpdateButton">UPDATE</string>
+    <string name="userProfileImageView">userProfileImageView</string>
+    <string name="userProfileUsernameLabel">Username: %1$s</string>
+    <string name="userProfileTreasuresDiscoveredLabel">Treasures discovered: %1$s</string>
+    <string name="userProfileTreasuresHiddenLabel">Treasures Hidden: %1$s</string>
+    <string name="userprofileusername"></string>
+    <string name="userProfileHomeButton">HOME</string>
+    <string name="userProfileLogoutButton">LOGOUT</string>
+    <string name="preference_file_key_username">user_username</string>
+    <string name="preference_file_key_image_path">user_image_path</string>
+    <string name="preference_file_key_score">0</string>
+
+    <!-- CLAIM TREASURE FEATURE STRING VALUES -->
+    <string name="claimTreasurePasscodeLabel">Passcode:</string>
+    <string name="claimTreasurePasscodeHint">Unique identifier</string>
+    <string name="claimTreasureClaimTreasureButton">CLAIM TREASURE</string>
+    <string name="claimTreasurePasscode"></string>
+
+    <!-- LOGIN FEATURE STRING VALUES -->
+    <string name="login">Login</string>
+    <string name="login_failed">Username or password are incorrect.</string>
+    <string name="network_failure"> Network failure</string>
+    <string name="username">Username</string>
+    <string name="create_account"><u>Don\'t have an account? Make one here</u></string>
+    <string name="invalid_credentials">Invalid username or password!</string>
+
+    <!-- REGISTRATION FEATURE STRING VALUES -->
+    <string name="user_name"><u>Username</u></string>
+    <string name="password"><u>Password</u></string>
+    <string name="confirm_password"><u>Confirm password</u></string>
+    <string name="register_button">Register</string>
+    <string name="ok">OK</string>
+    <string name="register_agree">By clicking register you agree with the terms and conditions.</string>
+
+    <!-- SPLASH-SCREEN FEATURE STRING VALUES -->
+    <string name="splash_screen_image">splash_screen_image</string>
+
+    <!-- Create treasure screen string values -->
+    <string name="page_title">Page Title</string>
+    <string name="teasing_title">Title</string>
+    <string name="description">Description</string>
+    <string name="prize_points">Prize points</string>
+    <string name="passcode">Passcode</string>
+    <string name="enter_longitude">Longitude</string>
+    <string name="enter_latitude">Latitude</string>
+    <string name="create_treasure">Create Treasure</string>
+    <string name="fill_blanks">Please fill all the blanks</string>
+    <string name="created_treasure">Treasure created successfully</string>
+    <string name="exists_treasure">Treasure already exists</string>
+    <string name="small_title">Enter a title for your item</string>
+    <string name="small_description">Something that would motivate others to play?</string>
+    <string name="small_photo_clue">Link a representative image</string>
+    <string name="small_location">A pair of coordinates[latitude,longitude]</string>
+    <string name="small_prize">Reward from your own prize points</string>
+    <string name="small_passcode">Unique identifier</string>
+    <string name="user_picture"> user picture</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Maps string values-->
+    <string name="title_maps">MAPS</string>
+
+    <!-- Notification string values -->
+    <string name="notificationTitle">Trasure Found</string>
+    <string name="notificationContent">HEEEEEEYYYYY</string>
+    <string name="notificationText">Something</string>
+    <string name="notificationTrasureNear">Treasures are near</string>
+    <string name="notificationShowOnMap">Show on map</string>
+    <string name="notificationDismiss">Dismiss</string>
+    <string name="notificationShowTresureOnMap"> Show treasure on map </string>
+
+    <!-- treasure list add treasure-->
+    <string name="add_treasure">ADD TREASURE</string>
+</resources>

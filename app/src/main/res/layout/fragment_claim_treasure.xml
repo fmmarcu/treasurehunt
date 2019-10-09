@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentClaimTreasure">
+
+    <TextView
+        android:id="@+id/claimTreasurePasscodeLabel"
+        android:layout_width="@dimen/claimTreasurePasscodeLabelWidth"
+        android:layout_height="@dimen/claimTreasurePasscodeLabelHeight"
+        android:layout_marginStart="@dimen/userProfileMargin"
+        android:layout_marginTop="@dimen/userProfileMargin"
+        android:layout_marginBottom="@dimen/userProfileMargin"
+        android:text="@string/claimTreasurePasscodeLabel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/userProfileTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/claimTreasurePasscode"
+        android:layout_width="@dimen/claimTreasurePasscodeWidth"
+        android:layout_height="@dimen/claimTreasurePasscodeHeight"
+        android:layout_marginStart="@dimen/userProfileMargin"
+        android:layout_marginTop="@dimen/userProfileMargin"
+        android:layout_marginEnd="@dimen/userProfileMargin"
+        android:layout_marginBottom="@dimen/userProfileMargin"
+        android:digits="1234567890"
+        app:layout_constraintBottom_toTopOf="@+id/claimTreasurePasscodeHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/claimTreasurePasscodeLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:maxLines="1"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/claimTreasurePasscodeHint"
+        android:layout_width="@dimen/claimTreasurePasscodeHintWidth"
+        android:layout_height="@dimen/claimTreasurePasscodeHintHeight"
+        android:layout_marginStart="@dimen/userProfileMargin"
+        android:layout_marginTop="@dimen/userProfileMargin"
+        android:layout_marginEnd="@dimen/userProfileMargin"
+        android:layout_marginBottom="@dimen/userProfileMargin"
+        android:text="@string/claimTreasurePasscodeHint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/claimTreasurePasscodeLabel"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <Button
+        android:id="@+id/claimTreasureClaimTreasureButton"
+        android:layout_width="@dimen/claimTreasureButtonWidth"
+        android:layout_height="@dimen/claimTreasureButtonHeight"
+        android:layout_marginStart="@dimen/userProfileMargin"
+        android:layout_marginTop="@dimen/userProfileMargin"
+        android:layout_marginEnd="@dimen/userProfileMargin"
+        android:layout_marginBottom="@dimen/userProfileMargin"
+        android:text="@string/claimTreasureClaimTreasureButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/claimTreasurePasscodeHint"
+        app:layout_constraintVertical_bias="0.986" />
+</androidx.constraintlayout.widget.ConstraintLayout>

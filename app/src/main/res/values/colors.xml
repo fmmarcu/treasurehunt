@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorYellow">#f7be16</color>
+    <color name="colorTransparentYellow">#99f7be16</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Blue">#30C6DB</color>
+    <color name="progressBlue">#7CB9E8</color>
+    <color name="black">#000000</color>
+    <color name="loginBackgroundBlue">#216583</color>
+    <color name="loginWindowBlue">#00818A</color>
+    <color name="loginButtonYellow">#F7BE16</color>
+    <color name="loginCreateAccountText">#C7C2C0</color>
+    <color name="registrationLightBlue">#00818A</color>
+    <color name="registrationDarkBlue">#216583</color>
+    <color name="errorMessageColor">#ccff0000</color>
+    <color name="toggleButtonTextInvisible">#0000</color>
+    <color name="shadowColor">#3f3f3f</color>
+    <color name="notificationWhite">#C7C2C0</color>
+    <color name="fab_add">#FF000000</color>
+    <color name="toggleBlack">#FF000000</color>
+    <color name="toggleRed">#CC0000</color>
+    <color name="listBackgroundBlue">#216583</color>
+    <color name="listCardBlue">#00818A</color>
+</resources>

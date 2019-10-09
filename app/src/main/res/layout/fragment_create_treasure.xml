@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createTreasureScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBackgroundBlue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.fragment.CreateTreasureFragment">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/secondaryLayout"
+            android:layout_width="@dimen/treasureSecondaryLayoutWidth"
+            android:layout_height="@dimen/treasureSecondaryLayoutHeight"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="@dimen/treasureScreenLayoutPadding">
+
+            <TextView
+                android:id="@+id/messageTreasure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/toggleRed"
+                android:layout_marginBottom="@dimen/treasureErrorMarginBottom"
+                app:layout_constraintBottom_toTopOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/places_search_error"
+                android:visibility="invisible"
+                />
+
+            <View
+                android:id="@+id/circleView"
+                android:layout_width="@dimen/treasureCircleRadius"
+                android:layout_height="@dimen/treasureCircleRadius"
+                android:layout_marginTop="@dimen/treasureCircleMarginTop"
+                android:background="@drawable/circle_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/photobutton"
+                android:layout_width="@dimen/treasureCameraRadius"
+                android:layout_height="@dimen/treasureCameraRadius"
+                android:background="@drawable/photo_icon"
+                app:layout_constraintBottom_toBottomOf="@id/circleView"
+                app:layout_constraintCircle="@id/circleView"
+                app:layout_constraintStart_toStartOf="@id/circleView"
+                app:layout_constraintTop_toTopOf="@id/circleView" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="@dimen/loginEditTextWidth"
+                android:layout_height="@dimen/loginEditTextHeight"
+                android:layout_marginTop="@dimen/treasureTitleMarginTop"
+                android:background="@drawable/rounded_corner_yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circleView"
+                android:hint="@string/teasing_title"
+                android:inputType="text"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/passcode"
+                android:layout_width="@dimen/loginEditTextWidth"
+                android:layout_height="@dimen/loginEditTextHeight"
+                android:layout_marginTop="@dimen/distanceEditText"
+                android:background="@drawable/rounded_corner_yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="@string/passcode"
+                android:inputType="number"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <EditText
+                android:id="@+id/treasureDescription"
+                android:layout_width="@dimen/loginEditTextWidth"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/loginEditTextHeight"
+                android:maxHeight="@dimen/loginEditTextHeight"
+                android:layout_marginTop="@dimen/distanceEditText"
+                android:gravity="center"
+                android:padding="@dimen/treasureDescriptionPadding"
+                android:background="@drawable/rounded_corner_yellow"
+                android:hint="@string/description"
+                android:inputType="text|textMultiLine"
+                android:maxLength="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passcode"
+                tools:targetApi="p" />
+
+            <EditText
+                android:id="@+id/latitude"
+                android:layout_width="@dimen/loginEditTextWidth"
+                android:layout_height="@dimen/loginEditTextHeight"
+                android:layout_marginTop="@dimen/distanceEditText"
+                android:background="@drawable/rounded_corner_yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="@string/enter_latitude"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/treasureDescription" />
+
+            <EditText
+                android:id="@+id/longitude"
+                android:layout_width="@dimen/loginEditTextWidth"
+                android:layout_height="@dimen/loginEditTextHeight"
+                android:layout_marginTop="@dimen/distanceEditText"
+                android:background="@drawable/rounded_corner_yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:inputType="numberDecimal"
+                android:hint="@string/enter_longitude"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/latitude" />
+
+            <EditText
+                android:id="@+id/prizePoints"
+                android:layout_width="@dimen/loginEditTextWidth"
+                android:layout_height="@dimen/loginEditTextHeight"
+                android:layout_marginTop="@dimen/distanceEditText"
+                android:background="@drawable/rounded_corner_yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="@string/prize_points"
+                android:inputType="number"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/longitude" />
+
+            <Button
+                android:id="@+id/add_treasure_button"
+                android:text="@string/add_treasure"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_height="@dimen/newLoginButtonHeight"
+                android:layout_width="@dimen/treasureButtonWidth"
+                android:layout_marginTop="@dimen/treasureButtonMarginTop"
+                android:enabled="false"
+                android:background="@drawable/rounded_button_with_shadow"
+                app:layout_constraintTop_toBottomOf="@+id/prizePoints"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="progressBarAnimationDuration">5000</integer>
+    <integer name="startProgressBar">0</integer>
+    <integer name="stopProgressBar">100</integer>
+</resources>
